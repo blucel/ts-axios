@@ -1,7 +1,4 @@
-import { AxiosRequestConfig } from './types'
-import xmr from './xhr'
-function Axios(config: AxiosRequestConfig): void {
-  xmr(config)
-}
+import Axios from './axios'
 
+export * from './types'
 export default Axios
