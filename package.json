@@ -36,8 +36,8 @@
     "precommit": "lint-staged",
     "travis-deploy-once": "travis-deploy-once",
     "testprepub": "npm run test:prod && npm run build",
-    "prepub": "npm run test:prod && npm run build",
-    "pub": "sh release.sh"
+    "11prepub": "npm run test:prod && npm run build",
+    "pub": "sh release.sh 12 asd 3 4"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
