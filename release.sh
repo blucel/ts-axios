@@ -12,8 +12,8 @@ then
   git add -A
   echo "input commit: \n"
   npm run commit
-  #  read commit
-  #  git commit -m "$commit"
+  # read commit
+  # git commit -m "$commit"
   npm version $VERSION --message "[release] $VERSION"
   git push origin master
 
