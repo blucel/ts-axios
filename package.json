@@ -1,6 +1,6 @@
 {
   "name": "ts-axios-cli",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "",
   "keywords": [],
   "main": "dist/ts-axios.umd.js",
