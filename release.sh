@@ -13,9 +13,9 @@ then
   echo "input commit: \n"
   npm run commit
   # read commit
-  # git commit -m "[build] $commit"
+  # git commit -m "$commit"
   npm version $VERSION --message "[release] $VERSION"
-  # git push origin master
+  git push origin master
 
   #publish
   # npm publish
