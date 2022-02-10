@@ -48,13 +48,10 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
 
     function addEvents(): void {
       request.onreadystatechange = function handleLoad() {
-        if (request.readyState !== 4) {
+        if (request.readyState !== 4 || request.status === 0) {
           return
         }
         console.log(request.status, 'status')
-        if (request.status === 0) {
-          return
-        }
         const responseHeaders = parseHeaders(request.getAllResponseHeaders())
         const responseData = responseType !== 'text' ? request.response : request.responseText
         const response: AxiosResponse = {
